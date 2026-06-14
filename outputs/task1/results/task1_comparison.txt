@@ -1,0 +1,5 @@
+Metric                              RNN       LSTM
+-------------------------------------------------------
+char_accuracy                    0.7562     0.9047
+word_accuracy                    0.6274     0.8086
+levenshtein_distance            25.5067    10.4723

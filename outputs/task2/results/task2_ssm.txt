@@ -1,0 +1,68 @@
+======================================================================
+S4D — Next-Word Prediction Results (v11)
+======================================================================
+Vocab size : 17758
+Parameters : 2,687,710
+Architecture : S4D_Gated, d_model=128, d_state=64
+Best val loss : 5.4864 (ppl=241.39)
+Test loss : 5.4847 (ppl=240.98)
+
+──────────────────────────────────────────────────────────────────────
+EXAMPLE 1: Greedy Continuations (+15 words)
+──────────────────────────────────────────────────────────────────────
+Seed : the jury said
+Output: the jury said <EOS> the <UNK> of the <UNK> of the <UNK> of the <UNK> of the <UNK>
+
+Seed : the city of
+Output: the city of the <UNK> <EOS> the <UNK> of the <UNK> of the <UNK> of the <UNK> of
+
+Seed : fulton county grand
+Output: fulton county grand <UNK> <EOS> the <UNK> of the <UNK> of the <UNK> of the <UNK> of the
+
+Seed : it recommended that
+Output: it recommended that he had been a <UNK> of <UNK> <EOS> the <UNK> of the <UNK> of the
+
+Seed : the election was
+Output: the election was a <UNK> <EOS> the <UNK> of the <UNK> of the <UNK> of the <UNK> of
+
+Seed : the president of the
+Output: the president of the <UNK> <EOS> the <UNK> of the <UNK> of the <UNK> of the <UNK> of the
+
+Seed : police department the jury
+Output: police department the jury <EOS> the <UNK> of the <UNK> of the <UNK> of the <UNK> of the <UNK>
+
+──────────────────────────────────────────────────────────────────────
+EXAMPLE 2: Top-K Sampled Continuations (k=10, temp=0.8)
+──────────────────────────────────────────────────────────────────────
+Seed : the jury said
+Output: the jury said that he was <UNK> at all the <UNK> of the <UNK> of an old house
+
+Seed : the city of
+Output: the city of the world <EOS> the other words is not a good man who is in his
+
+Seed : fulton county grand
+Output: fulton county grand stadium <EOS> it is not the <UNK> <UNK> and <UNK> <UNK> <EOS> <UNK> <EOS> the
+
+Seed : it recommended that
+Output: it recommended that she knew how much <UNK> <EOS> and i think it was not <UNK> <EOS> the
+
+Seed : the election was
+Output: the election was a little one <EOS> the first thing to get the <UNK> and <UNK> <EOS> the
+
+Seed : the president of the
+Output: the president of the <UNK> <EOS> he is a little boy with me <EOS> the <UNK> and <UNK> and
+
+Seed : police department the jury
+Output: police department the jury said <EOS> i was a woman who had had been a <UNK> of a great
+
+──────────────────────────────────────────────────────────────────────
+EXAMPLE 3: Top-5 Most Likely Next Words (word scoring)
+──────────────────────────────────────────────────────────────────────
+Context : 'the fulton county grand jury said'
+Top-5 : <EOS>(30.18%), that(12.46%), to(3.11%), the(2.68%), and(2.53%)
+
+Context : 'the city of atlanta for the'
+Top-5 : <UNK>(7.56%), first(1.99%), university(1.31%), new(1.05%), last(1.04%)
+
+Context : 'it recommended that fulton legislators'
+Top-5 : <EOS>(6.06%), committee(5.05%), and(4.50%), of(3.28%), to(2.71%)

@@ -1,0 +1,13 @@
+======================================================================
+TASK 2 — Model Comparison (v11)
+======================================================================
+Metric                               S4D (NWP)   Bi-LSTM (MLM)
+--------------------------------------------------------------
+Best Val Loss                           5.4864          4.7300
+Best Val Perplexity                     241.39          113.29
+Test Loss                               5.4847          4.7663
+Test Perplexity                         240.98          117.48
+
+Notes:
+ S4D : Causal autoregressive NWP using FFT Convolution over frozen HiPPO/LegS complex state.
+ Bi-LSTM: Custom bidirectional MLM, hidden=256, seq_len=128.

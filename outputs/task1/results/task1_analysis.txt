@@ -1,0 +1,119 @@
+======================================================================
+TASK 1 — RNN vs LSTM ANALYSIS
+======================================================================
+
+──────────────────────────────────────────────────────────────────────
+CIPHER ANALYSIS
+──────────────────────────────────────────────────────────────────────
+  Type: True Homophonic Substitution Cipher (line-aligned files)
+  Encoding: SPACE->1 digit, NON-SPACE->2 digits per plain char
+  Same token maps to 10+ different plain chars (no position pattern)
+  Theoretical accuracy ceilings:
+    Unigram  (token only):              28.3%
+    Bigram   (prev plain char + token): 38.9%
+    5-gram   (4 prev plain + token):    70.1%
+    Seq2Seq  (full plain context):       85-90%+
+
+──────────────────────────────────────────────────────────────────────
+ARCHITECTURE
+──────────────────────────────────────────────────────────────────────
+  Unidirectional Seq2Seq with Bahdanau Attention (line-by-line):
+  - Encoder: unidirectional RNN/LSTM reads cipher token sequence
+    W_ih(x) vectorised for all T simultaneously (one batched matmul)
+  - Decoder: autoregressive - each step sees all prev decoded plain chars
+    This gives access to English bigrams/trigrams for disambiguation
+  - Bahdanau attention: decoder attends to encoder positions at each step
+  - Teacher forcing annealed 0.90->0.10 during training
+  Speed optimisation: bucket batching groups similar-length lines
+    -> minimises padding, reduces effective T from 200 to ~87
+
+──────────────────────────────────────────────────────────────────────
+QUANTITATIVE COMPARISON
+──────────────────────────────────────────────────────────────────────
+Metric                                RNN       LSTM   Winner
+─────────────────────────────────────────────────────────────────
+char_accuracy                      0.7562     0.9047     LSTM
+word_accuracy                      0.6274     0.8086     LSTM
+levenshtein_distance              25.5067    10.4723     LSTM
+
+──────────────────────────────────────────────────────────────────────
+TRAINING SUMMARY
+──────────────────────────────────────────────────────────────────────
+RNN  best val_loss=0.8293 epoch 80
+LSTM best val_loss=0.3389 epoch 50
+
+──────────────────────────────────────────────────────────────────────
+ERROR ANALYSIS
+──────────────────────────────────────────────────────────────────────
+
+[RNN]
+  char_acc mean=0.7562 std=0.1871
+  lev_dist mean=25.51
+  Best 3:
+    REF:Urethane foams
+    PRED:Urethane foams
+
+    REF:Time had no meaning
+    PRED:Time had no meaning
+
+    REF:Shh Felix implored
+    PRED:Shh Felix implored
+
+  Worst 3:
+    REF:procedures change rapidly and parental confidence probably exceeds anything warranted by established psychological theory
+    PRED:procertion soaeed teaeees ahe soreeees thaieeeenn  ooeien  ation   etioe  e  eetion     etioeation thaieeee thaienenee  ooeien  ation   
+
+    REF:packing efficiency FR
+    PRED:palatiy sareeeeend Af
+
+    REF:primary decomposition theorem
+    PRED:prieral conteetioniis weteees
+
+
+[LSTM]
+  char_acc mean=0.9047 std=0.1129
+  lev_dist mean=10.47
+  Best 3:
+    REF:Urethane foams
+    PRED:Urethane foams
+
+    REF:broadcastings
+    PRED:broadcastings
+
+    REF:Time had no meaning
+    PRED:Time had no meaning
+
+  Worst 3:
+    REF:The I A P A is a reflection of the problems and hopes of the hemisphere
+    PRED:The I A D H oo o  ri n  n  an  neeein  he  en                 iteteiiee
+
+    REF:In were painting at our garage strong stress on at indicates that the job being done is not real painting but simply an effort at painting
+    PRED:In were painting at our garage strong stress onress on at indicates that the mon reing hoae is tot wert coaeeats ahd seteed on seaees oo d
+
+    REF:The Court limited its decision to the tax issue involved commenting It is not our province to pass judgment on the morality of the transaction
+    PRED:The Court limited its decision to the tal issuibiisseing  lloeee comeeniin  i  s  th  or   ee                                        erieianes
+
+
+──────────────────────────────────────────────────────────────────────
+DISCUSSION
+──────────────────────────────────────────────────────────────────────
+
+The cipher is a true homophonic substitution: each plain char maps
+to one of many randomly-chosen cipher codes. Without context,
+the best possible accuracy is 28.3% (unigram ceiling).
+The model at 34%+ confirms it IS using some context, but needs more.
+
+The seq2seq decoder is the key: its autoregressive design means each
+prediction uses ALL previously decoded plain chars as context.
+This is equivalent to an n-gram language model that grows with each
+decoded position, giving access to English bigrams and trigrams.
+
+RNN: Tanh recurrence provides short-range context. The vanishing
+gradient limits how far back the encoder can remember cipher patterns.
+The decoder benefits from English bigrams but struggles with longer
+dependencies like 'tion', 'ing', proper nouns.
+
+LSTM: Gated memory (i/f/o gates + cell state) enables the encoder
+to retain longer-range cipher patterns and the decoder to maintain
+longer phrase-level context. Consistently outperforms RNN.
+======================================================================

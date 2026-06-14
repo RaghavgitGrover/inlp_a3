@@ -1,0 +1,129 @@
+Model: RNN (Unidirectional Seq2Seq + Attention)
+Best epoch: 80  Best val loss: 0.8293
+
+=== Test Metrics ===
+char_accuracy: 0.7562
+word_accuracy: 0.6274
+levenshtein_distance: 25.5067
+
+=== Sample Predictions (first 20) ===
+
+--- Sample 1 ---
+REF : Okay I said to the attendant Ill let you know if I close the deal on the office in this building
+PRED: Okay I said to the attendant Rll let tou saoe in I waotd the sore of the saaeed of thet toaiee t
+CharAcc : 0.6562
+LevDist : 33
+
+--- Sample 2 ---
+REF : For a number of years there have been sporadic attempts in California to organize farm workers
+PRED: For a number of years there have been sporagic atteried in Aanrieatis of toreeied toae teeeees
+CharAcc : 0.6702
+LevDist : 30
+
+--- Sample 3 ---
+REF : When he discusses the subject matter of poetry he asks what moral effect the scenes will have
+PRED: When he discusses the subject matter of coethy ie saie toae teeee teaeed the soaeed toat teee
+CharAcc : 0.6667
+LevDist : 31
+
+--- Sample 4 ---
+REF : Then see what a boom in all trades as well as slum clearance at no cost to taxpayers will happen
+PRED: Then see what a boom in all trases as well in toat toaeeeeed of ie saie of toeeeeied toae theiee
+CharAcc : 0.5521
+LevDist : 42
+
+--- Sample 5 ---
+REF : but if he did not he would become mortal melting into earth whence his frame had been taken
+PRED: but if he did not he could aepome sortal weiting aorh soret theies the sores and soee toais
+CharAcc : 0.6154
+LevDist : 35
+
+--- Sample 6 ---
+REF : For this love of the boy for his mother is a hopeless and forbidden love doomed by its nature
+PRED: For this love of the boy for his bother is a soreeied the soreeeied toae tarted oo the sateer
+CharAcc : 0.6667
+LevDist : 31
+
+--- Sample 7 ---
+REF : Thereafter seed and food became more plentiful and the colony remained in the north the year round
+PRED: Thereafter seed and food became more blentince ahd the sareed teaeeees of the sores and sore toais
+CharAcc : 0.6633
+LevDist : 33
+
+--- Sample 8 ---
+REF : She wouldnt be going to get that for an hour or so after Katya had left go do the daily shopping
+PRED: She wouldnt be going to get that for an hord if io tatts Aares and toat of to the satie theieees
+CharAcc : 0.6667
+LevDist : 32
+
+--- Sample 9 ---
+REF : When he sank on his knees they had allowed him to char without administering the stroke of mercy
+PRED: When he sank on his pnees they had allowed aid in teat soreeed toaeeeeinions and toeeed of toees
+CharAcc : 0.5729
+LevDist : 40
+
+--- Sample 10 ---
+REF : It consists of two divisions separated by an island at a small distance from the southern shore
+PRED: It consists of two divisions separated by an ispard in a sinit toaeeeed toae the soreeied toae the soreeie
+CharAcc : 0.6737
+LevDist : 37
+
+--- Sample 11 ---
+REF : Holmes was asked if he had ever visited a house of prostitution or a beatnik parlor or teahouse
+PRED: Holmes was asked if he had ever fisited a compe in toeeinieieis of a soaeeis soaeed of teeeeies
+CharAcc : 0.6105
+LevDist : 35
+
+--- Sample 12 ---
+REF : And Bernie Kriss calls the bayonet clashes at Berlins Brandenburg Gate The Battle of the Sentry
+PRED: And Bernie Mriss calls the bayonet classes at Merrean Saateeeiens Care Mas Sartes of the Aortes
+CharAcc : 0.6842
+LevDist : 30
+
+--- Sample 13 ---
+REF : Lines of Lycidas later point to a friendship with Edward King who entered Christs College June
+PRED: Lines of Lycidas later point to a friendship eith Ailler Saat the soreees Aartinn Aartiey Aore
+CharAcc : 0.6383
+LevDist : 34
+
+--- Sample 14 ---
+REF : The MEs boys had finished their onthespot examination and the body had been removed for autopsy
+PRED: The Mes boys had finished their onthespot enaatenions and the sore the sare theiens and toee theient the s
+CharAcc : 0.6105
+LevDist : 40
+
+--- Sample 15 ---
+REF : The fruit is then cooled to degreesF a temperature at which it lapses into a sort of dormant state
+PRED: The fruit is then cooled to degreesA a temperation of sorts of teaeed toae a pery of toeeied toaes
+CharAcc : 0.6429
+LevDist : 35
+
+--- Sample 16 ---
+REF : The things that happened in police station basements were dirty grubby and most often anonymous
+PRED: The things that happened in police station caseratid sooe teaer theied the sore toaee titeeetid
+CharAcc : 0.5895
+LevDist : 39
+
+--- Sample 17 ---
+REF : Inside you will find the lovely Sibyls painted by Raphael and a chapel designed by Michelangelo
+PRED: Inside you will find the lovely Hinuls fainted hs Jarries and a soreed toeeeets of Aortanitiets
+CharAcc : 0.6105
+LevDist : 37
+
+--- Sample 18 ---
+REF : The mystique of sex combined with marijuana and jazz is intended to provide a design for living
+PRED: The mystique of sex combined with mariouans and shat io saateeed oo tatiens a serlit and toeees
+CharAcc : 0.6316
+LevDist : 34
+
+--- Sample 19 ---
+REF : We must make certain that the aircraft is finished before we give the entire job to the missile
+PRED: We must make certain that the aircramt is minished though of thet the soreed the of the soreeis
+CharAcc : 0.6632
+LevDist : 32
+
+--- Sample 20 ---
+REF : I heard the Classical Symphony for the first time when Koussevitzky conducted it in Paris in
+PRED: I heard the Classical Cymphond for the first tire aaen Marrieations weteeeied oo be Aarts so
+CharAcc : 0.6630
+LevDist : 31

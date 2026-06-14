@@ -1,0 +1,3 @@
+This directory must house all your source code for the assignment.
+
+Note that since we will be having automated evaluation for task 3, you should keep the option to load a test file for input, and write the output to an output file.

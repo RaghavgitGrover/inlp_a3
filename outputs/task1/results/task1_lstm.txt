@@ -1,0 +1,129 @@
+Model: LSTM (Unidirectional Seq2Seq + Attention)
+Best epoch: 50  Best val loss: 0.3389
+
+=== Test Metrics ===
+char_accuracy: 0.9047
+word_accuracy: 0.8086
+levenshtein_distance: 10.4723
+
+=== Sample Predictions (first 20) ===
+
+--- Sample 1 ---
+REF : Okay I said to the attendant Ill let you know if I close the deal on the office in this building
+PRED: Okay I said to the attendant Ill let you know if I aoore the wied io the coinee of thee cartiens
+CharAcc : 0.7396
+LevDist : 25
+
+--- Sample 2 ---
+REF : For a number of years there have been sporadic attempts in California to organize farm workers
+PRED: For a number of years there have been sporadic attempts in Calitornia to ermanice harm iortaes
+CharAcc : 0.9043
+LevDist : 9
+
+--- Sample 3 ---
+REF : When he discusses the subject matter of poetry he asks what moral effect the scenes will have
+PRED: When he discusses the subject matter of poetry he asks what moral excect the sooner will daee
+CharAcc : 0.9247
+LevDist : 7
+
+--- Sample 4 ---
+REF : Then see what a boom in all trades as well as slum clearance at no cost to taxpayers will happen
+PRED: Then see what a boom in all trades as well as moer aeearance of io saee to pertieeae with sareet
+CharAcc : 0.7188
+LevDist : 27
+
+--- Sample 5 ---
+REF : but if he did not he would become mortal melting into earth whence his frame had been taken
+PRED: but if he did not he would become mortal melting hnto earth whence ais foase had seen tioen
+CharAcc : 0.9231
+LevDist : 7
+
+--- Sample 6 ---
+REF : For this love of the boy for his mother is a hopeless and forbidden love doomed by its nature
+PRED: For this love of the boy for his mother is a poarless and thrciioes woue coohed ao the coilee
+CharAcc : 0.7527
+LevDist : 23
+
+--- Sample 7 ---
+REF : Thereafter seed and food became more plentiful and the colony remained in the north the year round
+PRED: Thereafter seed and food became more plentiful and the colony resained in the nesto the aear aoant
+CharAcc : 0.9184
+LevDist : 8
+
+--- Sample 8 ---
+REF : She wouldnt be going to get that for an hour or so after Katya had left go do the daily shopping
+PRED: She wouldnt be going to get that for an hour or so arter Gatoo hid tite io be the soree cereiens
+CharAcc : 0.7500
+LevDist : 24
+
+--- Sample 9 ---
+REF : When he sank on his knees they had allowed him to char without administering the stroke of mercy
+PRED: When he sank on his knees they had allowed him to char tithout actinittering the strole of peotr
+CharAcc : 0.9062
+LevDist : 9
+
+--- Sample 10 ---
+REF : It consists of two divisions separated by an island at a small distance from the southern shore
+PRED: It consists of two divisions separated by an island at a shall pistanie lrom the southern sinae
+CharAcc : 0.9263
+LevDist : 7
+
+--- Sample 11 ---
+REF : Holmes was asked if he had ever visited a house of prostitution or a beatnik parlor or teahouse
+PRED: Holmes was asked if he had ever visited a house of prostitution or a seatnis pareor of aeartels
+CharAcc : 0.8947
+LevDist : 10
+
+--- Sample 12 ---
+REF : And Bernie Kriss calls the bayonet clashes at Berlins Brandenburg Gate The Battle of the Sentry
+PRED: And Bernie Kriss calls the bayonet clashes at Berlins Crandencnre Late Yhe Cattle of the Cenert
+CharAcc : 0.8947
+LevDist : 10
+
+--- Sample 13 ---
+REF : Lines of Lycidas later point to a friendship with Edward King who entered Christs College June
+PRED: Lines of Lycidas later point to a friendship with Sdhard Sint who entered Shrists College Sune
+CharAcc : 0.9362
+LevDist : 6
+
+--- Sample 14 ---
+REF : The MEs boys had finished their onthespot examination and the body had been removed for autopsy
+PRED: The MEs boys had finished their onthespot examination and the moun had heen deeeped thr sotourt
+CharAcc : 0.8421
+LevDist : 15
+
+--- Sample 15 ---
+REF : The fruit is then cooled to degreesF a temperature at which it lapses into a sort of dormant state
+PRED: The fruit is then cooled to degreesC a temperature at which it lacses into a sort of pereant state
+CharAcc : 0.9490
+LevDist : 5
+
+--- Sample 16 ---
+REF : The things that happened in police station basements were dirty grubby and most often anonymous
+PRED: The things that happened in police station basements were pirty truoen and iott teten anoeaeoes
+CharAcc : 0.8632
+LevDist : 13
+
+--- Sample 17 ---
+REF : Inside you will find the lovely Sibyls painted by Raphael and a chapel designed by Michelangelo
+PRED: Inside you will find the lovely Pibmls painted by Raprael and a chalel oesinoed be Morcelanceal
+CharAcc : 0.8526
+LevDist : 14
+
+--- Sample 18 ---
+REF : The mystique of sex combined with marijuana and jazz is intended to provide a design for living
+PRED: The mystivue of sex combined with mariouana and tark is intended to protide a design tor pieity
+CharAcc : 0.8842
+LevDist : 11
+
+--- Sample 19 ---
+REF : We must make certain that the aircraft is finished before we give the entire job to the missile
+PRED: We must make certain that the aircraft is finished before we wive the entire tot to the soenite
+CharAcc : 0.9158
+LevDist : 8
+
+--- Sample 20 ---
+REF : I heard the Classical Symphony for the first time when Koussevitzky conducted it in Paris in
+PRED: I heard the Classical Symphony for the first time when Mousselituht conitited tt in Aeris on
+CharAcc : 0.8696
+LevDist : 12

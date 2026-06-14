@@ -1,0 +1,292 @@
+2026-03-25 12:07:39,107 | Data: /kaggle/input/datasets/raghav1grover1/inlpa3/plain.txt | Output: outputs | Device: cuda
+2026-03-25 12:07:39,468 | Split -> train=45466 val=5683 test=5684
+2026-03-25 12:07:39,709 | ============================================================
+2026-03-25 12:07:39,710 | TASK 2a — S4D (Diagonal State Space), Autoregressive NWP (v11)
+2026-03-25 12:07:39,711 | ============================================================
+2026-03-25 12:07:40,461 | SSM params: 2,687,710
+2026-03-25 12:08:02,607 | [SSM]   1/80 | Train loss=8.7735 ppl=6460.90 | Val loss=8.7512 ppl=6318.00 | lr=1.25e-04 | 13.6s
+2026-03-25 12:08:02,640 |  -> best model saved (val_loss=8.7512 ppl=6318.00)
+2026-03-25 12:08:14,365 | [SSM]   2/80 | Train loss=7.2342 ppl=1386.03 | Val loss=7.1717 ppl=1302.03 | lr=1.88e-04 | 11.7s
+2026-03-25 12:08:14,396 |  -> best model saved (val_loss=7.1717 ppl=1302.03)
+2026-03-25 12:08:26,243 | [SSM]   3/80 | Train loss=6.7426 ppl=847.79 | Val loss=6.6472 ppl=770.63 | lr=2.50e-04 | 11.8s
+2026-03-25 12:08:26,274 |  -> best model saved (val_loss=6.6472 ppl=770.63)
+2026-03-25 12:08:38,298 | [SSM]   4/80 | Train loss=6.5941 ppl=730.80 | Val loss=6.5061 ppl=669.19 | lr=3.13e-04 | 12.0s
+2026-03-25 12:08:38,326 |  -> best model saved (val_loss=6.5061 ppl=669.19)
+2026-03-25 12:08:50,492 | [SSM]   5/80 | Train loss=6.5070 ppl=669.82 | Val loss=6.4216 ppl=614.98 | lr=3.75e-04 | 12.2s
+2026-03-25 12:08:50,520 |  -> best model saved (val_loss=6.4216 ppl=614.98)
+2026-03-25 12:09:02,867 | [SSM]   6/80 | Train loss=6.3418 ppl=567.84 | Val loss=6.2669 ppl=526.83 | lr=4.38e-04 | 12.3s
+2026-03-25 12:09:02,895 |  -> best model saved (val_loss=6.2669 ppl=526.83)
+2026-03-25 12:09:15,453 | [SSM]   7/80 | Train loss=6.2068 ppl=496.12 | Val loss=6.1429 ppl=465.39 | lr=5.00e-04 | 12.6s
+2026-03-25 12:09:15,485 |  -> best model saved (val_loss=6.1429 ppl=465.39)
+2026-03-25 12:09:28,189 | [SSM]   8/80 | Train loss=6.1029 ppl=447.14 | Val loss=6.0557 ppl=426.55 | lr=5.00e-04 | 12.7s
+2026-03-25 12:09:28,216 |  -> best model saved (val_loss=6.0557 ppl=426.55)
+2026-03-25 12:09:41,173 | [SSM]   9/80 | Train loss=6.0110 ppl=407.89 | Val loss=5.9789 ppl=395.00 | lr=5.00e-04 | 13.0s
+2026-03-25 12:09:41,201 |  -> best model saved (val_loss=5.9789 ppl=395.00)
+2026-03-25 12:09:54,458 | [SSM]  10/80 | Train loss=5.9415 ppl=380.50 | Val loss=5.9246 ppl=374.12 | lr=4.99e-04 | 13.3s
+2026-03-25 12:09:54,486 |  -> best model saved (val_loss=5.9246 ppl=374.12)
+2026-03-25 12:10:08,077 | [SSM]  11/80 | Train loss=5.8824 ppl=358.68 | Val loss=5.8808 ppl=358.10 | lr=4.98e-04 | 13.6s
+2026-03-25 12:10:08,105 |  -> best model saved (val_loss=5.8808 ppl=358.10)
+2026-03-25 12:10:21,562 | [SSM]  12/80 | Train loss=5.8299 ppl=340.31 | Val loss=5.8446 ppl=345.37 | lr=4.96e-04 | 13.5s
+2026-03-25 12:10:21,591 |  -> best model saved (val_loss=5.8446 ppl=345.37)
+2026-03-25 12:10:34,750 | [SSM]  13/80 | Train loss=5.7879 ppl=326.33 | Val loss=5.8177 ppl=336.20 | lr=4.94e-04 | 13.2s
+2026-03-25 12:10:34,778 |  -> best model saved (val_loss=5.8177 ppl=336.20)
+2026-03-25 12:10:47,802 | [SSM]  14/80 | Train loss=5.7487 ppl=313.79 | Val loss=5.7922 ppl=327.73 | lr=4.91e-04 | 13.0s
+2026-03-25 12:10:47,830 |  -> best model saved (val_loss=5.7922 ppl=327.73)
+2026-03-25 12:11:00,884 | [SSM]  15/80 | Train loss=5.7067 ppl=300.88 | Val loss=5.7662 ppl=319.33 | lr=4.88e-04 | 13.1s
+2026-03-25 12:11:00,911 |  -> best model saved (val_loss=5.7662 ppl=319.33)
+2026-03-25 12:11:14,087 | [SSM]  16/80 | Train loss=5.6726 ppl=290.78 | Val loss=5.7451 ppl=312.64 | lr=4.85e-04 | 13.2s
+2026-03-25 12:11:14,114 |  -> best model saved (val_loss=5.7451 ppl=312.64)
+2026-03-25 12:11:27,430 | [SSM]  17/80 | Train loss=5.6350 ppl=280.07 | Val loss=5.7197 ppl=304.81 | lr=4.81e-04 | 13.3s
+2026-03-25 12:11:27,456 |  -> best model saved (val_loss=5.7197 ppl=304.81)
+2026-03-25 12:11:40,760 | [SSM]  18/80 | Train loss=5.6051 ppl=271.82 | Val loss=5.7013 ppl=299.27 | lr=4.77e-04 | 13.3s
+2026-03-25 12:11:40,788 |  -> best model saved (val_loss=5.7013 ppl=299.27)
+2026-03-25 12:11:54,016 | [SSM]  19/80 | Train loss=5.5786 ppl=264.69 | Val loss=5.6871 ppl=295.03 | lr=4.72e-04 | 13.2s
+2026-03-25 12:11:54,043 |  -> best model saved (val_loss=5.6871 ppl=295.03)
+2026-03-25 12:12:07,205 | [SSM]  20/80 | Train loss=5.5512 ppl=257.54 | Val loss=5.6718 ppl=290.56 | lr=4.67e-04 | 13.2s
+2026-03-25 12:12:07,232 |  -> best model saved (val_loss=5.6718 ppl=290.56)
+2026-03-25 12:12:20,399 | [SSM]  21/80 | Train loss=5.5247 ppl=250.82 | Val loss=5.6559 ppl=285.99 | lr=4.61e-04 | 13.2s
+2026-03-25 12:12:20,428 |  -> best model saved (val_loss=5.6559 ppl=285.99)
+2026-03-25 12:12:33,647 | [SSM]  22/80 | Train loss=5.5003 ppl=244.77 | Val loss=5.6437 ppl=282.50 | lr=4.55e-04 | 13.2s
+2026-03-25 12:12:33,675 |  -> best model saved (val_loss=5.6437 ppl=282.50)
+2026-03-25 12:12:46,935 | [SSM]  23/80 | Train loss=5.4808 ppl=240.03 | Val loss=5.6355 ppl=280.19 | lr=4.48e-04 | 13.3s
+2026-03-25 12:12:46,964 |  -> best model saved (val_loss=5.6355 ppl=280.19)
+2026-03-25 12:13:00,257 | [SSM]  24/80 | Train loss=5.4619 ppl=235.54 | Val loss=5.6295 ppl=278.53 | lr=4.42e-04 | 13.3s
+2026-03-25 12:13:00,285 |  -> best model saved (val_loss=5.6295 ppl=278.53)
+2026-03-25 12:13:13,583 | [SSM]  25/80 | Train loss=5.4419 ppl=230.88 | Val loss=5.6193 ppl=275.68 | lr=4.34e-04 | 13.3s
+2026-03-25 12:13:13,612 |  -> best model saved (val_loss=5.6193 ppl=275.68)
+2026-03-25 12:13:26,897 | [SSM]  26/80 | Train loss=5.4218 ppl=226.28 | Val loss=5.6076 ppl=272.49 | lr=4.27e-04 | 13.3s
+2026-03-25 12:13:26,927 |  -> best model saved (val_loss=5.6076 ppl=272.49)
+2026-03-25 12:13:40,145 | [SSM]  27/80 | Train loss=5.4047 ppl=222.46 | Val loss=5.6025 ppl=271.09 | lr=4.19e-04 | 13.2s
+2026-03-25 12:13:40,174 |  -> best model saved (val_loss=5.6025 ppl=271.09)
+2026-03-25 12:13:53,368 | [SSM]  28/80 | Train loss=5.3846 ppl=218.03 | Val loss=5.5916 ppl=268.16 | lr=4.11e-04 | 13.2s
+2026-03-25 12:13:53,396 |  -> best model saved (val_loss=5.5916 ppl=268.16)
+2026-03-25 12:14:06,590 | [SSM]  29/80 | Train loss=5.3696 ppl=214.78 | Val loss=5.5873 ppl=267.00 | lr=4.02e-04 | 13.2s
+2026-03-25 12:14:06,620 |  -> best model saved (val_loss=5.5873 ppl=267.00)
+2026-03-25 12:14:19,825 | [SSM]  30/80 | Train loss=5.3527 ppl=211.19 | Val loss=5.5766 ppl=264.18 | lr=3.93e-04 | 13.2s
+2026-03-25 12:14:19,854 |  -> best model saved (val_loss=5.5766 ppl=264.18)
+2026-03-25 12:14:33,085 | [SSM]  31/80 | Train loss=5.3384 ppl=208.17 | Val loss=5.5714 ppl=262.80 | lr=3.84e-04 | 13.2s
+2026-03-25 12:14:33,119 |  -> best model saved (val_loss=5.5714 ppl=262.80)
+2026-03-25 12:14:46,392 | [SSM]  32/80 | Train loss=5.3245 ppl=205.31 | Val loss=5.5662 ppl=261.44 | lr=3.75e-04 | 13.3s
+2026-03-25 12:14:46,420 |  -> best model saved (val_loss=5.5662 ppl=261.44)
+2026-03-25 12:14:59,722 | [SSM]  33/80 | Train loss=5.3112 ppl=202.59 | Val loss=5.5633 ppl=260.68 | lr=3.65e-04 | 13.3s
+2026-03-25 12:14:59,752 |  -> best model saved (val_loss=5.5633 ppl=260.68)
+2026-03-25 12:15:13,061 | [SSM]  34/80 | Train loss=5.2968 ppl=199.69 | Val loss=5.5536 ppl=258.16 | lr=3.56e-04 | 13.3s
+2026-03-25 12:15:13,091 |  -> best model saved (val_loss=5.5536 ppl=258.16)
+2026-03-25 12:15:26,384 | [SSM]  35/80 | Train loss=5.2843 ppl=197.22 | Val loss=5.5512 ppl=257.54 | lr=3.46e-04 | 13.3s
+2026-03-25 12:15:26,413 |  -> best model saved (val_loss=5.5512 ppl=257.54)
+2026-03-25 12:15:39,689 | [SSM]  36/80 | Train loss=5.2699 ppl=194.39 | Val loss=5.5431 ppl=255.47 | lr=3.36e-04 | 13.3s
+2026-03-25 12:15:39,718 |  -> best model saved (val_loss=5.5431 ppl=255.47)
+2026-03-25 12:15:52,954 | [SSM]  37/80 | Train loss=5.2609 ppl=192.66 | Val loss=5.5437 ppl=255.62 | lr=3.25e-04 | 13.2s
+2026-03-25 12:16:06,225 | [SSM]  38/80 | Train loss=5.2499 ppl=190.56 | Val loss=5.5408 ppl=254.88 | lr=3.15e-04 | 13.3s
+2026-03-25 12:16:06,254 |  -> best model saved (val_loss=5.5408 ppl=254.88)
+2026-03-25 12:16:19,473 | [SSM]  39/80 | Train loss=5.2383 ppl=188.34 | Val loss=5.5353 ppl=253.49 | lr=3.04e-04 | 13.2s
+2026-03-25 12:16:19,501 |  -> best model saved (val_loss=5.5353 ppl=253.49)
+2026-03-25 12:16:32,700 | [SSM]  40/80 | Train loss=5.2269 ppl=186.22 | Val loss=5.5289 ppl=251.87 | lr=2.93e-04 | 13.2s
+2026-03-25 12:16:32,734 |  -> best model saved (val_loss=5.5289 ppl=251.87)
+2026-03-25 12:16:45,923 | [SSM]  41/80 | Train loss=5.2174 ppl=184.45 | Val loss=5.5271 ppl=251.40 | lr=2.83e-04 | 13.2s
+2026-03-25 12:16:45,951 |  -> best model saved (val_loss=5.5271 ppl=251.40)
+2026-03-25 12:16:59,175 | [SSM]  42/80 | Train loss=5.2094 ppl=182.98 | Val loss=5.5236 ppl=250.53 | lr=2.72e-04 | 13.2s
+2026-03-25 12:16:59,204 |  -> best model saved (val_loss=5.5236 ppl=250.53)
+2026-03-25 12:17:12,424 | [SSM]  43/80 | Train loss=5.1992 ppl=181.13 | Val loss=5.5189 ppl=249.36 | lr=2.61e-04 | 13.2s
+2026-03-25 12:17:12,454 |  -> best model saved (val_loss=5.5189 ppl=249.36)
+2026-03-25 12:17:25,682 | [SSM]  44/80 | Train loss=5.1909 ppl=179.62 | Val loss=5.5175 ppl=249.02 | lr=2.50e-04 | 13.2s
+2026-03-25 12:17:25,711 |  -> best model saved (val_loss=5.5175 ppl=249.02)
+2026-03-25 12:17:38,886 | [SSM]  45/80 | Train loss=5.1826 ppl=178.15 | Val loss=5.5153 ppl=248.46 | lr=2.39e-04 | 13.2s
+2026-03-25 12:17:38,914 |  -> best model saved (val_loss=5.5153 ppl=248.46)
+2026-03-25 12:17:52,084 | [SSM]  46/80 | Train loss=5.1761 ppl=176.99 | Val loss=5.5136 ppl=248.03 | lr=2.28e-04 | 13.2s
+2026-03-25 12:17:52,114 |  -> best model saved (val_loss=5.5136 ppl=248.03)
+2026-03-25 12:18:05,303 | [SSM]  47/80 | Train loss=5.1674 ppl=175.46 | Val loss=5.5098 ppl=247.11 | lr=2.17e-04 | 13.2s
+2026-03-25 12:18:05,341 |  -> best model saved (val_loss=5.5098 ppl=247.11)
+2026-03-25 12:18:18,562 | [SSM]  48/80 | Train loss=5.1619 ppl=174.49 | Val loss=5.5095 ppl=247.02 | lr=2.07e-04 | 13.2s
+2026-03-25 12:18:18,590 |  -> best model saved (val_loss=5.5095 ppl=247.02)
+2026-03-25 12:18:31,796 | [SSM]  49/80 | Train loss=5.1552 ppl=173.33 | Val loss=5.5064 ppl=246.26 | lr=1.96e-04 | 13.2s
+2026-03-25 12:18:31,829 |  -> best model saved (val_loss=5.5064 ppl=246.26)
+2026-03-25 12:18:45,014 | [SSM]  50/80 | Train loss=5.1494 ppl=172.32 | Val loss=5.5048 ppl=245.87 | lr=1.85e-04 | 13.2s
+2026-03-25 12:18:45,044 |  -> best model saved (val_loss=5.5048 ppl=245.87)
+2026-03-25 12:18:58,238 | [SSM]  51/80 | Train loss=5.1444 ppl=171.47 | Val loss=5.5035 ppl=245.54 | lr=1.75e-04 | 13.2s
+2026-03-25 12:18:58,265 |  -> best model saved (val_loss=5.5035 ppl=245.54)
+2026-03-25 12:19:11,476 | [SSM]  52/80 | Train loss=5.1385 ppl=170.47 | Val loss=5.5023 ppl=245.26 | lr=1.64e-04 | 13.2s
+2026-03-25 12:19:11,505 |  -> best model saved (val_loss=5.5023 ppl=245.26)
+2026-03-25 12:19:24,694 | [SSM]  53/80 | Train loss=5.1334 ppl=169.60 | Val loss=5.4998 ppl=244.65 | lr=1.54e-04 | 13.2s
+2026-03-25 12:19:24,721 |  -> best model saved (val_loss=5.4998 ppl=244.65)
+2026-03-25 12:19:37,934 | [SSM]  54/80 | Train loss=5.1279 ppl=168.66 | Val loss=5.4980 ppl=244.20 | lr=1.44e-04 | 13.2s
+2026-03-25 12:19:37,962 |  -> best model saved (val_loss=5.4980 ppl=244.20)
+2026-03-25 12:19:51,184 | [SSM]  55/80 | Train loss=5.1241 ppl=168.03 | Val loss=5.4971 ppl=243.99 | lr=1.35e-04 | 13.2s
+2026-03-25 12:19:51,218 |  -> best model saved (val_loss=5.4971 ppl=243.99)
+2026-03-25 12:20:04,463 | [SSM]  56/80 | Train loss=5.1209 ppl=167.48 | Val loss=5.4966 ppl=243.87 | lr=1.25e-04 | 13.2s
+2026-03-25 12:20:04,493 |  -> best model saved (val_loss=5.4966 ppl=243.87)
+2026-03-25 12:20:17,723 | [SSM]  57/80 | Train loss=5.1163 ppl=166.72 | Val loss=5.4954 ppl=243.57 | lr=1.16e-04 | 13.2s
+2026-03-25 12:20:17,752 |  -> best model saved (val_loss=5.4954 ppl=243.57)
+2026-03-25 12:20:30,971 | [SSM]  58/80 | Train loss=5.1131 ppl=166.19 | Val loss=5.4934 ppl=243.08 | lr=1.07e-04 | 13.2s
+2026-03-25 12:20:31,002 |  -> best model saved (val_loss=5.4934 ppl=243.08)
+2026-03-25 12:20:44,208 | [SSM]  59/80 | Train loss=5.1095 ppl=165.59 | Val loss=5.4932 ppl=243.03 | lr=9.78e-05 | 13.2s
+2026-03-25 12:20:44,236 |  -> best model saved (val_loss=5.4932 ppl=243.03)
+2026-03-25 12:20:57,421 | [SSM]  60/80 | Train loss=5.1061 ppl=165.03 | Val loss=5.4917 ppl=242.67 | lr=8.93e-05 | 13.2s
+2026-03-25 12:20:57,449 |  -> best model saved (val_loss=5.4917 ppl=242.67)
+2026-03-25 12:21:10,641 | [SSM]  61/80 | Train loss=5.1035 ppl=164.59 | Val loss=5.4917 ppl=242.67 | lr=8.11e-05 | 13.2s
+2026-03-25 12:21:10,668 |  -> best model saved (val_loss=5.4917 ppl=242.67)
+2026-03-25 12:21:23,866 | [SSM]  62/80 | Train loss=5.1018 ppl=164.32 | Val loss=5.4912 ppl=242.54 | lr=7.32e-05 | 13.2s
+2026-03-25 12:21:23,894 |  -> best model saved (val_loss=5.4912 ppl=242.54)
+2026-03-25 12:21:37,102 | [SSM]  63/80 | Train loss=5.0986 ppl=163.79 | Val loss=5.4893 ppl=242.09 | lr=6.57e-05 | 13.2s
+2026-03-25 12:21:37,130 |  -> best model saved (val_loss=5.4893 ppl=242.09)
+2026-03-25 12:21:50,354 | [SSM]  64/80 | Train loss=5.0971 ppl=163.55 | Val loss=5.4892 ppl=242.06 | lr=5.85e-05 | 13.2s
+2026-03-25 12:21:50,381 |  -> best model saved (val_loss=5.4892 ppl=242.06)
+2026-03-25 12:22:03,629 | [SSM]  65/80 | Train loss=5.0948 ppl=163.18 | Val loss=5.4884 ppl=241.87 | lr=5.17e-05 | 13.2s
+2026-03-25 12:22:03,658 |  -> best model saved (val_loss=5.4884 ppl=241.87)
+2026-03-25 12:22:16,903 | [SSM]  66/80 | Train loss=5.0939 ppl=163.03 | Val loss=5.4885 ppl=241.89 | lr=4.52e-05 | 13.2s
+2026-03-25 12:22:30,140 | [SSM]  67/80 | Train loss=5.0919 ppl=162.70 | Val loss=5.4875 ppl=241.65 | lr=3.92e-05 | 13.2s
+2026-03-25 12:22:30,169 |  -> best model saved (val_loss=5.4875 ppl=241.65)
+2026-03-25 12:22:43,434 | [SSM]  68/80 | Train loss=5.0917 ppl=162.66 | Val loss=5.4892 ppl=242.05 | lr=3.35e-05 | 13.3s
+2026-03-25 12:22:56,728 | [SSM]  69/80 | Train loss=5.0895 ppl=162.30 | Val loss=5.4873 ppl=241.60 | lr=2.82e-05 | 13.3s
+2026-03-25 12:22:56,758 |  -> best model saved (val_loss=5.4873 ppl=241.60)
+2026-03-25 12:23:10,032 | [SSM]  70/80 | Train loss=5.0892 ppl=162.25 | Val loss=5.4875 ppl=241.66 | lr=2.34e-05 | 13.3s
+2026-03-25 12:23:23,304 | [SSM]  71/80 | Train loss=5.0881 ppl=162.08 | Val loss=5.4872 ppl=241.57 | lr=1.90e-05 | 13.3s
+2026-03-25 12:23:23,335 |  -> best model saved (val_loss=5.4872 ppl=241.57)
+2026-03-25 12:23:36,625 | [SSM]  72/80 | Train loss=5.0874 ppl=161.96 | Val loss=5.4866 ppl=241.44 | lr=1.51e-05 | 13.3s
+2026-03-25 12:23:36,654 |  -> best model saved (val_loss=5.4866 ppl=241.44)
+2026-03-25 12:23:49,900 | [SSM]  73/80 | Train loss=5.0872 ppl=161.93 | Val loss=5.4867 ppl=241.46 | lr=1.16e-05 | 13.2s
+2026-03-25 12:24:03,189 | [SSM]  74/80 | Train loss=5.0865 ppl=161.83 | Val loss=5.4865 ppl=241.41 | lr=8.52e-06 | 13.3s
+2026-03-25 12:24:03,221 |  -> best model saved (val_loss=5.4865 ppl=241.41)
+2026-03-25 12:24:16,489 | [SSM]  75/80 | Train loss=5.0864 ppl=161.81 | Val loss=5.4866 ppl=241.44 | lr=5.93e-06 | 13.3s
+2026-03-25 12:24:29,785 | [SSM]  76/80 | Train loss=5.0862 ppl=161.77 | Val loss=5.4865 ppl=241.41 | lr=3.80e-06 | 13.3s
+2026-03-25 12:24:29,816 |  -> best model saved (val_loss=5.4865 ppl=241.41)
+2026-03-25 12:24:43,092 | [SSM]  77/80 | Train loss=5.0860 ppl=161.75 | Val loss=5.4864 ppl=241.39 | lr=2.14e-06 | 13.3s
+2026-03-25 12:24:43,121 |  -> best model saved (val_loss=5.4864 ppl=241.39)
+2026-03-25 12:24:56,383 | [SSM]  78/80 | Train loss=5.0861 ppl=161.75 | Val loss=5.4865 ppl=241.42 | lr=1.00e-06 | 13.3s
+2026-03-25 12:25:09,644 | [SSM]  79/80 | Train loss=5.0860 ppl=161.74 | Val loss=5.4865 ppl=241.41 | lr=1.00e-06 | 13.3s
+2026-03-25 12:25:22,915 | [SSM]  80/80 | Train loss=5.0860 ppl=161.74 | Val loss=5.4865 ppl=241.41 | lr=1.00e-06 | 13.3s
+2026-03-25 12:25:23,305 | [SSM] TEST -> loss=5.4847 ppl=240.98
+2026-03-25 12:26:04,011 | ============================================================
+2026-03-25 12:26:04,012 | TASK 2b — Bi-LSTM MLM (v11, Custom Recurrence)
+2026-03-25 12:26:04,012 | ============================================================
+2026-03-25 12:26:04,694 | Bi-LSTM params: 4,720,734
+2026-03-25 12:28:27,808 | [BiLSTM]   1/80 | Train loss=6.7933 ppl=891.88 | Val loss=6.6954 ppl=808.70 | lr=1.25e-04 | 141.4s
+2026-03-25 12:28:27,844 |  -> best model saved (val_loss=6.6954 ppl=808.70)
+2026-03-25 12:30:49,232 | [BiLSTM]   2/80 | Train loss=6.6959 ppl=809.05 | Val loss=6.5839 ppl=723.38 | lr=1.88e-04 | 141.4s
+2026-03-25 12:30:49,282 |  -> best model saved (val_loss=6.5839 ppl=723.38)
+2026-03-25 12:33:10,597 | [BiLSTM]   3/80 | Train loss=6.5390 ppl=691.61 | Val loss=6.4546 ppl=635.60 | lr=2.50e-04 | 141.3s
+2026-03-25 12:33:10,641 |  -> best model saved (val_loss=6.4546 ppl=635.60)
+2026-03-25 12:35:31,835 | [BiLSTM]   4/80 | Train loss=6.3201 ppl=555.64 | Val loss=6.2514 ppl=518.71 | lr=3.13e-04 | 141.2s
+2026-03-25 12:35:31,878 |  -> best model saved (val_loss=6.2514 ppl=518.71)
+2026-03-25 12:37:53,287 | [BiLSTM]   5/80 | Train loss=6.0956 ppl=443.91 | Val loss=6.0249 ppl=413.58 | lr=3.75e-04 | 141.4s
+2026-03-25 12:37:53,330 |  -> best model saved (val_loss=6.0249 ppl=413.58)
+2026-03-25 12:40:14,381 | [BiLSTM]   6/80 | Train loss=5.8650 ppl=352.47 | Val loss=5.8431 ppl=344.85 | lr=4.38e-04 | 141.0s
+2026-03-25 12:40:14,422 |  -> best model saved (val_loss=5.8431 ppl=344.85)
+2026-03-25 12:42:35,412 | [BiLSTM]   7/80 | Train loss=5.6960 ppl=297.69 | Val loss=5.6842 ppl=294.17 | lr=5.00e-04 | 141.0s
+2026-03-25 12:42:35,453 |  -> best model saved (val_loss=5.6842 ppl=294.17)
+2026-03-25 12:44:56,277 | [BiLSTM]   8/80 | Train loss=5.5643 ppl=260.95 | Val loss=5.5746 ppl=263.63 | lr=5.00e-04 | 140.8s
+2026-03-25 12:44:56,325 |  -> best model saved (val_loss=5.5746 ppl=263.63)
+2026-03-25 12:47:17,230 | [BiLSTM]   9/80 | Train loss=5.4704 ppl=237.54 | Val loss=5.5186 ppl=249.30 | lr=5.00e-04 | 140.9s
+2026-03-25 12:47:17,280 |  -> best model saved (val_loss=5.5186 ppl=249.30)
+2026-03-25 12:49:37,935 | [BiLSTM]  10/80 | Train loss=5.3815 ppl=217.35 | Val loss=5.4323 ppl=228.68 | lr=4.99e-04 | 140.7s
+2026-03-25 12:49:37,977 |  -> best model saved (val_loss=5.4323 ppl=228.68)
+2026-03-25 12:51:58,586 | [BiLSTM]  11/80 | Train loss=5.3046 ppl=201.27 | Val loss=5.3934 ppl=219.95 | lr=4.98e-04 | 140.6s
+2026-03-25 12:51:58,631 |  -> best model saved (val_loss=5.3934 ppl=219.95)
+2026-03-25 12:54:19,071 | [BiLSTM]  12/80 | Train loss=5.2444 ppl=189.51 | Val loss=5.3479 ppl=210.16 | lr=4.96e-04 | 140.4s
+2026-03-25 12:54:19,113 |  -> best model saved (val_loss=5.3479 ppl=210.16)
+2026-03-25 12:56:40,012 | [BiLSTM]  13/80 | Train loss=5.1728 ppl=176.41 | Val loss=5.3088 ppl=202.11 | lr=4.94e-04 | 140.9s
+2026-03-25 12:56:40,055 |  -> best model saved (val_loss=5.3088 ppl=202.11)
+2026-03-25 12:59:00,564 | [BiLSTM]  14/80 | Train loss=5.0978 ppl=163.67 | Val loss=5.2536 ppl=191.26 | lr=4.91e-04 | 140.5s
+2026-03-25 12:59:00,604 |  -> best model saved (val_loss=5.2536 ppl=191.26)
+2026-03-25 13:01:20,048 | [BiLSTM]  15/80 | Train loss=5.0606 ppl=157.69 | Val loss=5.2532 ppl=191.18 | lr=4.88e-04 | 139.4s
+2026-03-25 13:01:20,089 |  -> best model saved (val_loss=5.2532 ppl=191.18)
+2026-03-25 13:03:40,341 | [BiLSTM]  16/80 | Train loss=5.0100 ppl=149.90 | Val loss=5.2118 ppl=183.42 | lr=4.85e-04 | 140.3s
+2026-03-25 13:03:40,390 |  -> best model saved (val_loss=5.2118 ppl=183.42)
+2026-03-25 13:06:01,076 | [BiLSTM]  17/80 | Train loss=4.9570 ppl=142.17 | Val loss=5.1827 ppl=178.15 | lr=4.81e-04 | 140.7s
+2026-03-25 13:06:01,125 |  -> best model saved (val_loss=5.1827 ppl=178.15)
+2026-03-25 13:08:21,233 | [BiLSTM]  18/80 | Train loss=4.9224 ppl=137.33 | Val loss=5.1451 ppl=171.59 | lr=4.77e-04 | 140.1s
+2026-03-25 13:08:21,273 |  -> best model saved (val_loss=5.1451 ppl=171.59)
+2026-03-25 13:10:41,931 | [BiLSTM]  19/80 | Train loss=4.8756 ppl=131.06 | Val loss=5.1204 ppl=167.41 | lr=4.72e-04 | 140.7s
+2026-03-25 13:10:41,979 |  -> best model saved (val_loss=5.1204 ppl=167.41)
+2026-03-25 13:13:02,631 | [BiLSTM]  20/80 | Train loss=4.8317 ppl=125.42 | Val loss=5.1130 ppl=166.16 | lr=4.67e-04 | 140.7s
+2026-03-25 13:13:02,678 |  -> best model saved (val_loss=5.1130 ppl=166.16)
+2026-03-25 13:15:23,446 | [BiLSTM]  21/80 | Train loss=4.7979 ppl=121.25 | Val loss=5.0878 ppl=162.03 | lr=4.61e-04 | 140.8s
+2026-03-25 13:15:23,494 |  -> best model saved (val_loss=5.0878 ppl=162.03)
+2026-03-25 13:17:43,851 | [BiLSTM]  22/80 | Train loss=4.7477 ppl=115.31 | Val loss=5.0558 ppl=156.94 | lr=4.55e-04 | 140.4s
+2026-03-25 13:17:43,892 |  -> best model saved (val_loss=5.0558 ppl=156.94)
+2026-03-25 13:20:04,660 | [BiLSTM]  23/80 | Train loss=4.7163 ppl=111.76 | Val loss=5.0538 ppl=156.62 | lr=4.48e-04 | 140.8s
+2026-03-25 13:20:04,698 |  -> best model saved (val_loss=5.0538 ppl=156.62)
+2026-03-25 13:22:25,208 | [BiLSTM]  24/80 | Train loss=4.6781 ppl=107.57 | Val loss=5.0158 ppl=150.77 | lr=4.42e-04 | 140.5s
+2026-03-25 13:22:25,256 |  -> best model saved (val_loss=5.0158 ppl=150.77)
+2026-03-25 13:24:46,352 | [BiLSTM]  25/80 | Train loss=4.6631 ppl=105.97 | Val loss=5.0039 ppl=148.99 | lr=4.34e-04 | 141.1s
+2026-03-25 13:24:46,392 |  -> best model saved (val_loss=5.0039 ppl=148.99)
+2026-03-25 13:27:07,170 | [BiLSTM]  26/80 | Train loss=4.6238 ppl=101.88 | Val loss=4.9908 ppl=147.05 | lr=4.27e-04 | 140.8s
+2026-03-25 13:27:07,215 |  -> best model saved (val_loss=4.9908 ppl=147.05)
+2026-03-25 13:29:27,171 | [BiLSTM]  27/80 | Train loss=4.6011 ppl=99.59 | Val loss=4.9612 ppl=142.76 | lr=4.19e-04 | 140.0s
+2026-03-25 13:29:27,211 |  -> best model saved (val_loss=4.9612 ppl=142.76)
+2026-03-25 13:31:47,837 | [BiLSTM]  28/80 | Train loss=4.5707 ppl=96.61 | Val loss=4.9779 ppl=145.17 | lr=4.11e-04 | 140.6s
+2026-03-25 13:34:08,385 | [BiLSTM]  29/80 | Train loss=4.5415 ppl=93.83 | Val loss=4.9751 ppl=144.76 | lr=4.02e-04 | 140.5s
+2026-03-25 13:36:29,075 | [BiLSTM]  30/80 | Train loss=4.5224 ppl=92.05 | Val loss=4.9204 ppl=137.06 | lr=3.93e-04 | 140.7s
+2026-03-25 13:36:29,115 |  -> best model saved (val_loss=4.9204 ppl=137.06)
+2026-03-25 13:38:49,112 | [BiLSTM]  31/80 | Train loss=4.4855 ppl=88.72 | Val loss=4.9100 ppl=135.64 | lr=3.84e-04 | 140.0s
+2026-03-25 13:38:49,161 |  -> best model saved (val_loss=4.9100 ppl=135.64)
+2026-03-25 13:41:08,827 | [BiLSTM]  32/80 | Train loss=4.4731 ppl=87.63 | Val loss=4.9476 ppl=140.83 | lr=3.75e-04 | 139.7s
+2026-03-25 13:43:27,977 | [BiLSTM]  33/80 | Train loss=4.4552 ppl=86.07 | Val loss=4.8955 ppl=133.69 | lr=3.65e-04 | 139.1s
+2026-03-25 13:43:28,024 |  -> best model saved (val_loss=4.8955 ppl=133.69)
+2026-03-25 13:45:47,525 | [BiLSTM]  34/80 | Train loss=4.4294 ppl=83.88 | Val loss=4.8912 ppl=133.11 | lr=3.56e-04 | 139.5s
+2026-03-25 13:45:47,565 |  -> best model saved (val_loss=4.8912 ppl=133.11)
+2026-03-25 13:48:06,875 | [BiLSTM]  35/80 | Train loss=4.4033 ppl=81.72 | Val loss=4.9036 ppl=134.77 | lr=3.46e-04 | 139.3s
+2026-03-25 13:50:26,993 | [BiLSTM]  36/80 | Train loss=4.3881 ppl=80.49 | Val loss=4.8662 ppl=129.82 | lr=3.36e-04 | 140.1s
+2026-03-25 13:50:27,034 |  -> best model saved (val_loss=4.8662 ppl=129.82)
+2026-03-25 13:52:46,492 | [BiLSTM]  37/80 | Train loss=4.3751 ppl=79.45 | Val loss=4.8777 ppl=131.33 | lr=3.25e-04 | 139.5s
+2026-03-25 13:55:05,756 | [BiLSTM]  38/80 | Train loss=4.3469 ppl=77.24 | Val loss=4.8827 ppl=131.99 | lr=3.15e-04 | 139.3s
+2026-03-25 13:57:25,694 | [BiLSTM]  39/80 | Train loss=4.3472 ppl=77.26 | Val loss=4.8576 ppl=128.72 | lr=3.04e-04 | 139.9s
+2026-03-25 13:57:25,742 |  -> best model saved (val_loss=4.8576 ppl=128.72)
+2026-03-25 13:59:45,162 | [BiLSTM]  40/80 | Train loss=4.3206 ppl=75.23 | Val loss=4.8541 ppl=128.27 | lr=2.93e-04 | 139.4s
+2026-03-25 13:59:45,207 |  -> best model saved (val_loss=4.8541 ppl=128.27)
+2026-03-25 14:02:04,247 | [BiLSTM]  41/80 | Train loss=4.2995 ppl=73.66 | Val loss=4.8415 ppl=126.66 | lr=2.83e-04 | 139.0s
+2026-03-25 14:02:04,291 |  -> best model saved (val_loss=4.8415 ppl=126.66)
+2026-03-25 14:04:22,571 | [BiLSTM]  42/80 | Train loss=4.2906 ppl=73.01 | Val loss=4.8590 ppl=128.89 | lr=2.72e-04 | 138.3s
+2026-03-25 14:06:42,931 | [BiLSTM]  43/80 | Train loss=4.2832 ppl=72.47 | Val loss=4.8323 ppl=125.50 | lr=2.61e-04 | 140.4s
+2026-03-25 14:06:42,971 |  -> best model saved (val_loss=4.8323 ppl=125.50)
+2026-03-25 14:09:03,626 | [BiLSTM]  44/80 | Train loss=4.2637 ppl=71.07 | Val loss=4.8287 ppl=125.05 | lr=2.50e-04 | 140.7s
+2026-03-25 14:09:03,673 |  -> best model saved (val_loss=4.8287 ppl=125.05)
+2026-03-25 14:11:22,955 | [BiLSTM]  45/80 | Train loss=4.2572 ppl=70.61 | Val loss=4.8296 ppl=125.17 | lr=2.39e-04 | 139.3s
+2026-03-25 14:13:42,335 | [BiLSTM]  46/80 | Train loss=4.2457 ppl=69.81 | Val loss=4.8371 ppl=126.10 | lr=2.28e-04 | 139.4s
+2026-03-25 14:16:00,932 | [BiLSTM]  47/80 | Train loss=4.2282 ppl=68.59 | Val loss=4.7985 ppl=121.33 | lr=2.17e-04 | 138.6s
+2026-03-25 14:16:00,977 |  -> best model saved (val_loss=4.7985 ppl=121.33)
+2026-03-25 14:18:22,123 | [BiLSTM]  48/80 | Train loss=4.2255 ppl=68.41 | Val loss=4.8416 ppl=126.67 | lr=2.07e-04 | 141.1s
+2026-03-25 14:20:42,792 | [BiLSTM]  49/80 | Train loss=4.1977 ppl=66.53 | Val loss=4.8082 ppl=122.51 | lr=1.96e-04 | 140.7s
+2026-03-25 14:23:04,037 | [BiLSTM]  50/80 | Train loss=4.1931 ppl=66.23 | Val loss=4.8036 ppl=121.95 | lr=1.85e-04 | 141.2s
+2026-03-25 14:25:25,553 | [BiLSTM]  51/80 | Train loss=4.1744 ppl=65.00 | Val loss=4.8198 ppl=123.94 | lr=1.75e-04 | 141.5s
+2026-03-25 14:27:45,563 | [BiLSTM]  52/80 | Train loss=4.1699 ppl=64.71 | Val loss=4.7547 ppl=116.12 | lr=1.64e-04 | 140.0s
+2026-03-25 14:27:45,603 |  -> best model saved (val_loss=4.7547 ppl=116.12)
+2026-03-25 14:30:06,184 | [BiLSTM]  53/80 | Train loss=4.1787 ppl=65.28 | Val loss=4.7917 ppl=120.50 | lr=1.54e-04 | 140.6s
+2026-03-25 14:32:27,455 | [BiLSTM]  54/80 | Train loss=4.1564 ppl=63.84 | Val loss=4.8035 ppl=121.93 | lr=1.44e-04 | 141.3s
+2026-03-25 14:34:48,758 | [BiLSTM]  55/80 | Train loss=4.1497 ppl=63.42 | Val loss=4.7902 ppl=120.32 | lr=1.35e-04 | 141.3s
+2026-03-25 14:37:09,914 | [BiLSTM]  56/80 | Train loss=4.1437 ppl=63.04 | Val loss=4.7811 ppl=119.24 | lr=1.25e-04 | 141.2s
+2026-03-25 14:39:32,345 | [BiLSTM]  57/80 | Train loss=4.1266 ppl=61.97 | Val loss=4.7939 ppl=120.77 | lr=1.16e-04 | 142.4s
+2026-03-25 14:41:53,701 | [BiLSTM]  58/80 | Train loss=4.1325 ppl=62.33 | Val loss=4.8277 ppl=124.92 | lr=1.07e-04 | 141.4s
+2026-03-25 14:44:15,485 | [BiLSTM]  59/80 | Train loss=4.1214 ppl=61.65 | Val loss=4.7933 ppl=120.70 | lr=9.78e-05 | 141.8s
+2026-03-25 14:46:36,497 | [BiLSTM]  60/80 | Train loss=4.1149 ppl=61.25 | Val loss=4.7722 ppl=118.18 | lr=8.93e-05 | 141.0s
+2026-03-25 14:48:57,780 | [BiLSTM]  61/80 | Train loss=4.1027 ppl=60.50 | Val loss=4.7703 ppl=117.95 | lr=8.11e-05 | 141.3s
+2026-03-25 14:51:19,437 | [BiLSTM]  62/80 | Train loss=4.0993 ppl=60.30 | Val loss=4.7768 ppl=118.73 | lr=7.32e-05 | 141.7s
+2026-03-25 14:53:41,189 | [BiLSTM]  63/80 | Train loss=4.1014 ppl=60.42 | Val loss=4.7819 ppl=119.33 | lr=6.57e-05 | 141.8s
+2026-03-25 14:56:01,962 | [BiLSTM]  64/80 | Train loss=4.0865 ppl=59.53 | Val loss=4.7770 ppl=118.75 | lr=5.85e-05 | 140.8s
+2026-03-25 14:58:23,675 | [BiLSTM]  65/80 | Train loss=4.1027 ppl=60.50 | Val loss=4.7626 ppl=117.05 | lr=5.17e-05 | 141.7s
+2026-03-25 15:00:45,382 | [BiLSTM]  66/80 | Train loss=4.0886 ppl=59.66 | Val loss=4.7539 ppl=116.04 | lr=4.52e-05 | 141.7s
+2026-03-25 15:00:45,423 |  -> best model saved (val_loss=4.7539 ppl=116.04)
+2026-03-25 15:03:07,614 | [BiLSTM]  67/80 | Train loss=4.0860 ppl=59.50 | Val loss=4.7599 ppl=116.74 | lr=3.92e-05 | 142.2s
+2026-03-25 15:05:30,425 | [BiLSTM]  68/80 | Train loss=4.0818 ppl=59.25 | Val loss=4.7523 ppl=115.85 | lr=3.35e-05 | 142.8s
+2026-03-25 15:05:30,473 |  -> best model saved (val_loss=4.7523 ppl=115.85)
+2026-03-25 15:07:52,160 | [BiLSTM]  69/80 | Train loss=4.0805 ppl=59.18 | Val loss=4.7639 ppl=117.20 | lr=2.82e-05 | 141.7s
+2026-03-25 15:10:11,219 | [BiLSTM]  70/80 | Train loss=4.0798 ppl=59.13 | Val loss=4.7673 ppl=117.61 | lr=2.34e-05 | 139.1s
+2026-03-25 15:12:32,834 | [BiLSTM]  71/80 | Train loss=4.0727 ppl=58.71 | Val loss=4.7729 ppl=118.26 | lr=1.90e-05 | 141.6s
+2026-03-25 15:14:53,928 | [BiLSTM]  72/80 | Train loss=4.0732 ppl=58.75 | Val loss=4.7627 ppl=117.06 | lr=1.51e-05 | 141.1s
+2026-03-25 15:17:14,616 | [BiLSTM]  73/80 | Train loss=4.0743 ppl=58.81 | Val loss=4.7718 ppl=118.14 | lr=1.16e-05 | 140.7s
+2026-03-25 15:19:34,884 | [BiLSTM]  74/80 | Train loss=4.0763 ppl=58.93 | Val loss=4.7473 ppl=115.28 | lr=8.52e-06 | 140.3s
+2026-03-25 15:19:34,929 |  -> best model saved (val_loss=4.7473 ppl=115.28)
+2026-03-25 15:21:54,193 | [BiLSTM]  75/80 | Train loss=4.0651 ppl=58.27 | Val loss=4.7506 ppl=115.65 | lr=5.93e-06 | 139.3s
+2026-03-25 15:24:13,182 | [BiLSTM]  76/80 | Train loss=4.0638 ppl=58.19 | Val loss=4.7359 ppl=113.97 | lr=3.80e-06 | 139.0s
+2026-03-25 15:24:13,222 |  -> best model saved (val_loss=4.7359 ppl=113.97)
+2026-03-25 15:26:32,586 | [BiLSTM]  77/80 | Train loss=4.0736 ppl=58.77 | Val loss=4.7347 ppl=113.83 | lr=2.14e-06 | 139.4s
+2026-03-25 15:26:32,629 |  -> best model saved (val_loss=4.7347 ppl=113.83)
+2026-03-25 15:28:53,475 | [BiLSTM]  78/80 | Train loss=4.0709 ppl=58.61 | Val loss=4.7300 ppl=113.29 | lr=1.00e-06 | 140.8s
+2026-03-25 15:28:53,516 |  -> best model saved (val_loss=4.7300 ppl=113.29)
+2026-03-25 15:31:14,191 | [BiLSTM]  79/80 | Train loss=4.0661 ppl=58.33 | Val loss=4.7688 ppl=117.77 | lr=1.00e-06 | 140.7s
+2026-03-25 15:33:33,794 | [BiLSTM]  80/80 | Train loss=4.0627 ppl=58.13 | Val loss=4.7672 ppl=117.59 | lr=1.00e-06 | 139.6s
+2026-03-25 15:33:36,920 | [BiLSTM] TEST -> loss=4.7663 ppl=117.48
+2026-03-25 15:34:08,282 | Comparison summary saved.
+2026-03-25 15:34:08,283 | ============================================================
+2026-03-25 15:34:08,284 | Task 2 complete. Outputs in: outputs/
+2026-03-25 15:34:08,285 | ============================================================

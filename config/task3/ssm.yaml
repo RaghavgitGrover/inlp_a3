@@ -1,0 +1,11 @@
+wandb_api_key: "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"
+wandb_project: "INLP-A3-Task3"
+seed: 42
+conf_threshold: 0.85
+alpha_ed: 2.5
+top_k_pred: 100
+n_passes_ssm: 3
+seq_len_ssm: 128
+seq_len_bilstm: 128
+decode_batch: 64
+max_line_len: 150
